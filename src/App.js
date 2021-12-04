@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Header from "./components/Header/index";
 import Card from "./components/Card/index";
 
 const Div = styled.div`
@@ -10,25 +11,11 @@ const Div = styled.div`
   }
 `;
 
-const Title = styled.header`
-  background-color: #d0ccd0;
-  text-align: center;
-  color: red;
-  width: 100%;
-  height: 50px;
-
-  position: fixed;
-  h2 {
-    font-family: "Courier New", Courier, monospace;
-  }
-`;
-
 const App = () => {
   return (
     <Div className="App">
-      <Title>
-        <h2>Marvel comics</h2>
-      </Title>
+      <Header />
+
       <Card />
     </Div>
   );

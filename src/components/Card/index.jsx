@@ -8,7 +8,6 @@ import Mod from "./style";
 
 import Footer from "../Footer";
 
-import ModalShow from "../Modal";
 import Comic from "../Comic";
 
 const Card = () => {
