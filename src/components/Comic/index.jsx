@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import { CustomDialog, useDialog } from "react-st-modal";
 import { Button, Modal } from "../Modal/style";
 import { Li, Com } from "./style";
+import Map from "../Map/index";
 
 function CustomDialogContent() {
-  // use this hook to control the dialog
   const dialog = useDialog();
 
   const [value, setValue] = useState();
@@ -18,20 +18,24 @@ function CustomDialogContent() {
           setValue(e.target.value);
         }}
       />
-      <Button
-        onClick={() => {
-          dialog.close(value);
-        }}
-      >
-        Submeter
-      </Button>
-      <Button
-        onClick={() => {
-          dialog.close();
-        }}
-      >
-        Cancelar
-      </Button>
+      <h2>Clique para localizar</h2>
+      <Map />
+      <div>
+        <Button
+          onClick={() => {
+            dialog.close(value);
+          }}
+        >
+          Submeter
+        </Button>
+        <Button
+          onClick={() => {
+            dialog.close();
+          }}
+        >
+          Cancelar
+        </Button>
+      </div>
     </Modal>
   );
 }

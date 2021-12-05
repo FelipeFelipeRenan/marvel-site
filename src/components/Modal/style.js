@@ -3,9 +3,20 @@ import styled from "styled-components";
 export const Modal = styled.div`
   background-color: #fbfcff;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-direction: column;
   margin-top: 30px;
   margin-bottom: 30px;
+  div {
+    display: inherit;
+    gap: 50px;
+    justify-content: center;
+    margin: 5px;
+  }
+  input {
+    align-self: center;
+    width: 200px;
+  }
 `;
 
 export const Button = styled.button`
