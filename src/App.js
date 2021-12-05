@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import Header from "./components/Header/index";
-import Card from "./components/Card/index";
+import Main from "./pages/main";
+import RoutesPage from "./routes";
 
 const Div = styled.div`
   html,
@@ -14,9 +14,7 @@ const Div = styled.div`
 const App = () => {
   return (
     <Div className="App">
-      <Header />
-
-      <Card />
+      <RoutesPage />
     </Div>
   );
 };

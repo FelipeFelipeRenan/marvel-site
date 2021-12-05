@@ -6,12 +6,7 @@ import {
   useMapEvents,
 } from "react-leaflet";
 import Mapping from "./style";
-import { Icon } from "leaflet";
 import { useState } from "react";
-
-const icon = new Icon({
-  iconSize: [25, 25],
-});
 
 function LocationMarker() {
   const [position, setPosition] = useState(null);
@@ -27,21 +22,9 @@ function LocationMarker() {
 
   return position === null ? null : (
     <Marker position={position}>
-      <Popup>You are here</Popup>
+      <Popup>You!</Popup>
     </Marker>
   );
-}
-
-function MyComponent() {
-  const map = useMapEvents({
-    click: () => {
-      map.locate();
-    },
-    locationfound: (location) => {
-      console.log("location found:", location);
-    },
-  });
-  return null;
 }
 
 const Map = () => {

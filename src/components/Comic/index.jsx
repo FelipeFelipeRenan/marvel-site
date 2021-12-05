@@ -12,13 +12,13 @@ function CustomDialogContent() {
   return (
     <Modal>
       <input
-        placeholder="Endereço"
+        placeholder="Quem irá receber?"
         type="text"
         onChange={(e) => {
           setValue(e.target.value);
         }}
       />
-      <h2>Clique para localizar</h2>
+      <h3>Clique para localizar</h3>
       <Map />
       <div>
         <Button
@@ -66,7 +66,17 @@ const Comic = () => {
                     });
                   }}
                 >
-                  <h3>{comic.title}</h3>
+                  <h3>
+                    {comic.title}
+                    {console.log(comic.title)}
+                    {console.log(comic.prices)}
+                    {console.log(comic.creators.items)}
+                    <br />
+                    price:
+                    {comic.prices.price}
+                    <br /> Criador {comic.creators.items.name}
+                  </h3>
+
                   <img
                     alt="comic"
                     src={comic.thumbnail.path + "." + comic.thumbnail.extension}

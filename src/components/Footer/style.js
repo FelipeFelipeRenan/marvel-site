@@ -12,6 +12,7 @@ const Foot = styled.footer`
     flex-direction: row;
     align-items: space-evenly;
     justify-content: center;
+    align-self: center;
   }
 
   a {

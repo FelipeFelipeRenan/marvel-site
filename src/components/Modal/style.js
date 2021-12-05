@@ -7,7 +7,13 @@ export const Modal = styled.div`
   flex-direction: column;
   margin-top: 30px;
   margin-bottom: 30px;
+
+  h3 {
+    display: inherit;
+    align-self: center;
+  }
   div {
+    background-color: #fbfcff;
     display: inherit;
     gap: 50px;
     justify-content: center;
