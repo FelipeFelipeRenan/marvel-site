@@ -1,12 +1,16 @@
-import Header from "../components/Header/index";
-import Card from "../components/Card/index";
+import { Link } from "react-router-dom";
 
 const Main = () => {
   return (
-    <>
-      <Header />
-      <Card />
-    </>
+    <div>
+      <h1>PAGINA INICIAL</h1>
+      <button>
+        <Link to="/comics">Quadrinhos</Link>
+      </button>
+      <button>
+        <Link to="/heroes">Herois</Link>
+      </button>
+    </div>
   );
 };
 
