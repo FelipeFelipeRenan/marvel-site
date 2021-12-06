@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 const Main = styled.div`
+  font-family: "Roboto Mono", monospace;
+  color: #e23636;
   margin-top: 30vh;
   display: inherit;
   flex-direction: column;
@@ -21,8 +23,9 @@ const Main = styled.div`
       width: 100px;
       height: 50px;
       border-radius: 10%;
-      background-color: #504441;
+      background-color: #2e2f2f;
       a {
+        font-family: "Roboto Mono", monospace;
         text-decoration: none;
         color: #e23636;
       }

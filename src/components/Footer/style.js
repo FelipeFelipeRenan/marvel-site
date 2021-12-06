@@ -10,12 +10,13 @@ const Foot = styled.footer`
   .container {
     display: flex;
     flex-direction: row;
-    align-items: space-evenly;
+    align-items: space-between;
     justify-content: center;
     align-self: center;
   }
 
   a {
+    font-family: "Roboto Mono", monospace;
     color: #e23636;
     text-decoration: none;
   }

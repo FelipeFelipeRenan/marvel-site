@@ -13,13 +13,13 @@ export const Li = styled.li`
 export const Com = styled.div`
   margin-top: 50px;
   h3 {
+    font-family: "Roboto Mono", monospace;
     color: #d0ccd0;
     align-self: flex-end;
     justify-self: center;
     font-size: 10pt;
     margin-bottom: 50px;
     margin-top: 100px;
-    font-family: "Courier New", Courier, monospace;
   }
   img {
     align-items: center;

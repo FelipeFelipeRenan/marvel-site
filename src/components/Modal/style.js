@@ -9,6 +9,8 @@ export const Modal = styled.div`
   margin-bottom: 30px;
 
   h3 {
+    font-family: "Roboto Mono", monospace;
+    color: #e23636;
     display: inherit;
     align-self: center;
   }
