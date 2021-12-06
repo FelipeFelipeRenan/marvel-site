@@ -66,12 +66,7 @@ const Comic = () => {
                     });
                   }}
                 >
-                  <h3>
-                    {comic.title}
-                    <br />
-                    price:
-                    {comic.prices.price}
-                  </h3>
+                  <h3>{comic.title}</h3>
 
                   <img
                     alt="comic"
