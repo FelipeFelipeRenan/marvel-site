@@ -16,7 +16,7 @@ const Foot = styled.footer`
   }
 
   a {
-    color: Red;
+    color: #e23636;
     text-decoration: none;
   }
 `;

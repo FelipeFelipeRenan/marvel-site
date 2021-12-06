@@ -1,16 +1,22 @@
-import { Link } from "react-router-dom";
+import styled from "styled-components";
+import Header from "../components/Header";
+import Options from "../Options/index";
+
+const Div = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 const Main = () => {
   return (
-    <div>
-      <h1>PAGINA INICIAL</h1>
-      <button>
-        <Link to="/comics">Quadrinhos</Link>
-      </button>
-      <button>
-        <Link to="/heroes">Herois</Link>
-      </button>
-    </div>
+    <>
+      <Div>
+        <Header />
+
+        <Options />
+      </Div>
+    </>
   );
 };
 

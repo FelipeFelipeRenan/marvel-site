@@ -4,9 +4,12 @@ import Head from "./style";
 const Header = () => {
   return (
     <Head>
-      <Link to="/heroes">Herois</Link>
+      <Link to="/heroes">Personagens</Link>
+
+      <Link to="/">
+        <h2>IMarvel</h2>
+      </Link>
       <Link to="/comics">Quadrinhos</Link>
-      <h2>IMarvel</h2>
     </Head>
   );
 };

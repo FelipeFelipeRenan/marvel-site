@@ -5,15 +5,18 @@ const Head = styled.header`
   display: flex;
   justify-content: space-around;
   text-align: center;
-
+  top: 0;
   width: 100%;
 
   position: fixed;
   h2 {
     font-family: "Courier New", Courier, monospace;
-    color: red;
+    color: #e23636;
   }
   button {
+    text-decoration: none;
+  }
+  a {
     text-decoration: none;
   }
 `;
