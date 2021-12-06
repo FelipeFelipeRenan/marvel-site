@@ -7,7 +7,7 @@ export const Li = styled.li`
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: center;
-  color: red;
+  color: #e23636;
 `;
 
 export const Com = styled.div`

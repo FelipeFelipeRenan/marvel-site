@@ -4,6 +4,8 @@ const Main = styled.div`
   font-family: "Roboto Mono", monospace;
   color: #e23636;
   margin-top: 30vh;
+  margin-bottom: 16vh;
+
   display: inherit;
   flex-direction: column;
   border-radius: 5%;
